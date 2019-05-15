@@ -14,7 +14,8 @@
     "keywords": ["Laravel", "saas"],
     "require": {
         "illuminate/support": "~5",
-        "pingecom/l5-tabler":"~1.0.0"
+        "pingecom/l5-tabler":"~1.0.0",
+        "spatie/laravel-permission":"^2.37"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
