@@ -1,0 +1,45 @@
+{
+    "name": "ckissi/saas",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/ckissi/saas",
+    "keywords": ["Laravel", "saas"],
+    "require": {
+        "illuminate/support": "~5",
+        "pingecom/l5-tabler":"~1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ckissi\\saas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ckissi\\saas\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ckissi\\saas\\saasServiceProvider"
+            ],
+            "aliases": {
+                "saas": "ckissi\\saas\\Facades\\saas"
+            }
+        }
+    }
+}
