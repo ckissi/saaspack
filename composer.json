@@ -1,12 +1,12 @@
 {
     "name": "ckissi/saas",
     "description": ":description",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Csaba Kissi",
+            "email": "ckissi+github@gmail.com",
+            "homepage": "http://www.csbakissi.com"
         }
     ],
     "minimum-stability": "dev",
