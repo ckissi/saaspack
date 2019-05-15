@@ -1,6 +1,6 @@
 {
     "name": "ckissi/saas",
-    "description": ":description",
+    "description": "SaaS implementation for Laravel",
     "license": "MIT",
     "authors": [
         {
