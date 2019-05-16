@@ -14,9 +14,12 @@ class saasServiceProvider extends ServiceProvider
     public function boot()
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ckissi');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'ckissi');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'saas');
+        $this->loadMigrationsFrom(__DIR__.'/models/migrations');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/ckissi/saas'),
+        ]);
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
