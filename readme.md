@@ -23,6 +23,8 @@ First, add the Spatie\Permission\Traits\HasRoles trait to your User model(s):
         // ...
     }
  ```
+ 
+ 
 ## Spatie Activity log
 
 [Documentation](https://docs.spatie.be/laravel-activitylog/v3)
@@ -37,16 +39,18 @@ Publish config
 ``` php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config" ```
 
 ## Tabler
-### Publish assets
+
+Publish assets
+
 ``` php artisan vendor:publish --provider="Pingecom\Tabler\Providers\TablerServiceProvider"```
 
-### Create authentication pages
+Create authentication pages
 
 ``` php artisan make:tabler ``` 
 
 ### Add social buttons to login screen:
 
-#### Css part
+Css part:
 ```
   <style>
          .login-or {
@@ -81,7 +85,7 @@ Publish config
      </style>
 ```
 
-#### HTML part
+HTML part:
 ```
 <div class="login-or">
     <hr class="hr-or">
