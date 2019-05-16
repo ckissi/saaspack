@@ -1,13 +1,17 @@
 # SaaS
 
 ## Spatie permissions
-### Publish migrations
+
+#### Installation
+Publish migrations:
+
 ``` php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"```
 
-### Publish config
+Publish config:
+
 ``` php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"```
 
-### Add trait to use model
+#### Add trait to use model
 First, add the Spatie\Permission\Traits\HasRoles trait to your User model(s):
 ``` use Illuminate\Foundation\Auth\User as Authenticatable;
     use Spatie\Permission\Traits\HasRoles;
@@ -23,10 +27,13 @@ First, add the Spatie\Permission\Traits\HasRoles trait to your User model(s):
 
 [Documentation](https://docs.spatie.be/laravel-activitylog/v3)
 
-### Publish migations
+#### Installation
+Publish migations
+
 ``` php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations" ```
 
-### Publish config
+Publish config
+
 ``` php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config" ```
 
 ## Tabler
