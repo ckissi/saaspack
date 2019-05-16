@@ -38,8 +38,34 @@ Publish config
 
 ``` php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config" ```
 
+## Socialite
+
+
+## Torran Geoip
+
+#### Installation
+
+[Documentation](http://lyften.com/projects/laravel-geoip/doc/services.html)
+
+Publish config
+ 
+``` php artisan vendor:publish --provider="Torann\GeoIP\GeoIPServiceProvider" --tag=config ```
+
+Update max-mind database
+
+``` php artisan geoip:update ```
+
+Clear cached locations
+
+``` php artisan geoip:clear ```
+
 ## Tabler
 
+[Documentation](https://github.com/baorv/l5-tabler)
+
+Create DefineMenu middleware
+
+``` php artisan make:middleware DefineMenu```
 Publish assets
 
 ``` php artisan vendor:publish --provider="Pingecom\Tabler\Providers\TablerServiceProvider"```
