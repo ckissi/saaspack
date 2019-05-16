@@ -19,25 +19,57 @@
 @endpush
 
 @section('content')
-    <div class="my-3 my-md-5">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="page-title">
-                    Charts
-                </h1>
-            </div>
-            <div class="row row-cards">
-                <div class="col-lg-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Employment Growth</h3>
+    <div class="card">
+        {{--{{ Form::model(Auth::user(), ['route' => ['profile.update', Auth::user()]]) }}
+        <div class="card-header">
+            <h3 class="card-title">Update Profile</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                        {{ Form::label('company',__('Company'),['class' => 'form-label']) }}
+                        <div class="input-group">
+                            {{ Form::text('company',Auth::user()->info->company,['class' => 'form-control '.($errors->has('company') ? ' is-invalid' : ''), 'style' => '']) }}
+                            <error field="company"/>
                         </div>
-                        <div class="card-body">
-                            <div id="chart-employment" style="height: 16rem"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                        {{ Form::label('email',__('Email'),['class' => 'form-label']) }}
+                        <div class="input-group">
+                            {{ Form::text('email',Auth::user()->email,['class' => 'form-control '.($errors->has('email') ? ' is-invalid' : ''), 'style' => '', 'disabled']) }}
+                            <error field="email"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                        {{ Form::label('name',__('Name'),['class' => 'form-label']) }}
+                        <div class="input-group">
+                            {{ Form::text('name',null,['class' => 'form-control '.($errors->has('name') ? ' is-invalid' : ''), 'style' => '']) }}
+                            <error field="name"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                        {{ Form::label('country_code',__('Country'),['class' => 'form-label']) }}
+                        <div class="input-group">
+                            {{ Form::select('country_code',$countries,Auth::user()->info->country_code,['class' => 'form-control custom-select'.($errors->has('country_code') ? ' is-invalid' : ''), 'style' => '']) }}
+                            <error field="country"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="card-footer text-right">
+            <button type="submit" class="btn btn-primary">{{ __('Save Changes') }}</button>
+        </div>
+        {{ Form::close() }}--}}
     </div>
 @stop
