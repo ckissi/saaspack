@@ -14,7 +14,6 @@
     "keywords": ["Laravel", "saas"],
     "require": {
         "illuminate/support": "~5",
-        "ckissi/l5-tabler":"~1.0.0",
         "geoip2/geoip2": "^2.8",
         "laravel/socialite": "^3.0",
         "spatie/laravel-newsletter": "^4.2",
@@ -22,7 +21,8 @@
         "spatie/laravel-mailable-test": "^2.0",
         "spatie/laravel-activitylog": "^3.5",
         "torann/geoip": "^1.0",
-        "thomaswelton/laravel-gravatar": "^1.1"
+        "thomaswelton/laravel-gravatar": "^1.1",
+        "ckissi/tabler":"~1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
