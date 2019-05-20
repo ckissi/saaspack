@@ -7,6 +7,7 @@ Route::domain(env('APP_ADMIN'))->group(function () {
             return response()->redirectToRoute('login');
         });
 
-        Route::get('profile', 'ProfileController@editProfile')->name('profile.edit');
+        Route::get('profile', 'ProfileController@index')->name('profile.index');
+        Route::put('profile', 'ProfileController@update')->name('profile.update');
     });
 });
